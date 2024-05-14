@@ -1,0 +1,23 @@
+{
+	"name": "turnos",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/app.ts",
+	"scripts": {
+		"dev": "tsnd --respawn --clear src/app.ts",
+		"build": "rimraf ./dist && tsc",
+		"start": "npm run build && node dist/app.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^20.12.11",
+		"rimraf": "^5.0.7",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.4.5"
+	},
+	"dependencies": {
+		"express": "^4.19.2"
+	}
+}
